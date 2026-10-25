@@ -2,8 +2,8 @@ name: Daily AI News Radar
 
 on:
   schedule:
-    # 01:00 UTC = 08:00 AM Vietnam (UTC+7)
-    - cron: '0 1 * * *'
+    # 01:05 UTC = 08:05 AM Vietnam (UTC+7) - lệch 5 phút tránh nghẽn queue mốc :00 của GitHub Actions
+    - cron: '5 1 * * *'
   workflow_dispatch:
 
 jobs:
